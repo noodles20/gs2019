@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/sales/sales",
+    "pages/adv/adv"
+  ],
+  "window":{
+    
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#17aac4",
+    "navigationBarTitleText": "个税计算",
+    "navigationBarTextStyle": "white"
+  },
+ 
+  "tabBar": {
+    "selectedColor": "#D53E37",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "月工资固定"
+        
+      },
+      {
+        "pagePath": "pages/sales/sales",
+        "text": "月工资浮动"
+        
+      },
+      {
+        "pagePath": "pages/adv/adv",
+        "text": "年终奖"
+      }
+    ]
+  }
+}

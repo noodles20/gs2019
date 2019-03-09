@@ -1,0 +1,56 @@
+<!--pages/adv/adv.wxml-->
+<!--<text class="topic-group">你看这广告，多大</text>-->
+<!--<text class="topic-group1">搜索noodlestech关注更多小程序</text>-->
+<!--<ad class="gg0" unit-id="adunit-8d8fe0d785bdc1c4"></ad>-->
+
+<form bindsubmit='formSumit' bindreset='formReset'>
+<icon class="button2" color="red" type="info" bindtap="tishi" size="25" />
+<view class="bk">
+    <view class="rowLayout1">
+      <text class="topic-group">全年税前工资(元)\n<text class="topic-groupx">(不含年终奖)</text></text>
+      <input calss="input" bindinput="jilu1" data-id="{{value.id}}" name="zong" type='number' placeholder="请点击此处输入">
+      </input>
+    </view>
+
+<view class="rowLayout1">
+      <text class="topic-group">全年各项保险扣除(元)</text>
+      <input calss="input" bindinput="jilu4" data-id="{{value.id}}" name="zong1" type='number' placeholder="请点击此处输入">
+      </input>
+    </view>
+
+
+    <view class="rowLayout1">
+      <view class="topic-group">年终奖税前(元)</view>
+      <input calss="border-input" bindinput="jilu2" data-id="{{value.id}}" name="baox1" type='number' placeholder="请点击此处输入">
+      </input>
+    </view>
+    <view class="rowLayout">
+      <view class="topic-group">每月专项附加扣除(元)</view>
+      <input calss="border-input" bindinput="jilu3" data-id="{{value.id}}" name="zhuanx" type='number' placeholder="请点击此处输入">
+      </input>
+    </view>
+  </view>
+
+<view class="bk1">
+    <view class="rowLayout3">
+      <view class="topic-group4">年终奖纳税额(元)</view>
+      <view class="topic-group4">年终奖纳税额(元)</view>
+    </view>
+    <view class="rowLayout3">
+      <view class="topic-groupy">单独计算</view>
+      <view class="topic-groupy">并入全年所得</view>
+    </view>
+    <view class="rowLayout3">
+      <text class="biaohong">{{blll}}</text>
+      <text class="biaohong">{{alll}}</text>
+    </view>
+</view>
+
+<view class="rowLayout">
+    <button class="button" form-type='submit'>计算</button>
+    <button class="button" form-type='reset'>重输</button>
+    <button class="button" form-type='reset' open-type="share">分享</button>
+  </view>
+
+</form>
+<ad class="gg0" unit-id="adunit-8d8fe0d785bdc1c4"></ad>

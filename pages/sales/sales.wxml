@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<form bindsubmit='formSumit' bindreset='formReset'>
+
+
+
+
+
+
+  <view class="bk">
+    <view class="rowLayout1">
+      <picker bindchange="bindPickerChange" name="mypicker" value="{{index}}" range="{{array}}">
+        <view class="topic-group0">
+          选择月份：
+          <text class="topic-group5">{{array[index]}}</text>
+        </view>
+      </picker>
+      <icon class="button2" type="info" bindtap="tishi" size="19" />
+    </view>
+    <view class="rowLayout1">
+      <text class="topic-group">月度税前收入(元)\n<text class="topic-groupx">(不含年终奖)</text></text>
+      <input calss="input" bindinput="jilu1" data-id="{{value.id}}" name="zong" type='number' value="{{oo1}}" placeholder="请点击此处输入">
+      </input>
+    </view>
+    <view class="rowLayout1">
+      <view class="topic-group">各项社会保险扣除(元)</view>
+      <input calss="border-input" bindinput="jilu2" data-id="{{value.id}}" name="baox1" type='number' value="{{oo2}}" placeholder="请点击此处输入">
+      </input>
+    </view>
+    <view class="rowLayout">
+      <view class="topic-group">每月专项附加扣除(元)</view>
+      <input calss="border-input" bindinput="jilu3" data-id="{{value.id}}" name="zhuanx" type='number' value="{{oo3}}" placeholder="请点击此处输入">
+      </input>
+    </view>
+  </view>
+
+  <modal title="提示" confirm-text="确定" no-cancel cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+    <view>可按月份输入具体工资和保险。\n</view>
+    <view>注:1.避免重复输入，可先选择预填写，它会自动填充12个月份的工资与保险，每月可手动微调;\n</view>
+    <view>2.专项扣除，无需重复输入，年初申报，全年锁定。\n</view>
+
+  </modal>
+
+
+  <view class="bk1">
+    <view class="rowLayout3">
+      <view class="topic-group4">全年纳税总额(元)\n<view class="topic-groupx">(不含年终奖)</view></view>
+      <view class="topic-group4">全年到手总额(元)\n<view class="topic-groupx">(不含年终奖)</view></view>
+    </view>
+    <view class="rowLayout3">
+      <text class="biaohong">{{blll}}\n</text>
+      <text class="biaohong">{{alll}}\n</text>
+    </view>
+
+    <view class="topic-group3">每月缴纳情况图</view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+  </view>
+
+
+
+  <view class="rowLayout">
+    <button class="button" form-type='submit'>计算</button>
+    <button class="button" form-type='reset'>重输</button>
+    <button class="button3" form-type='reset' open-type="share">分享</button>
+  </view>
+
+</form>

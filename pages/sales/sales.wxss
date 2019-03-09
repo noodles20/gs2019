@@ -1,0 +1,169 @@
+/**index.wxss**/
+
+page {
+  background-color: rgba(239, 239, 240, 1);
+}
+
+
+input {
+  
+  font-size: 3.8vw;
+  width: 31vw;
+  height: 8vh;
+  margin-right: 7.6vw;
+  text-align: right;
+}
+
+.topic-group {
+  /** background: #70998d**/
+  
+  font-size: 3.8vw;
+  
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    margin-left: 5.6vw;
+}
+.topic-groupx {
+  /** background: #70998d**/
+  
+  font-size: 3vw;
+  color:#7f8181;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    margin-left: 5.6vw;
+}
+
+
+.topic-group0 {
+  /** background: #70998d**/
+  
+  font-size: 3.8vw;
+  
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+    margin-left: 5.6vw;
+}
+
+.topic-group5 {
+  /** background: #70998d**/
+  
+  font-size: 3.8vw;
+  
+  color: red;
+  
+  
+}
+
+.topic-group3 {
+  font-size: 3.8vw;
+  color:rgb(189, 190, 189);
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+.topic-group4 {
+  font-size: 3.8vw;
+  margin-top: 2.4vh;
+}
+
+
+
+button {
+  margin-top: 1.5vh;
+  width: 25vw;
+  background: #17aac4;
+  color: white;
+  border-radius: 2.53vw;
+  height: 7.13vh;
+  vertical-align:middle;
+  text-align: center;
+  line-height:7.13vh;
+}
+
+.button2 {
+  height: 8vh;
+  margin-right: 5.95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.bk {
+  width: 95vw;
+  height:32vh;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  
+  background-color: #fff;
+  margin-top: 2.5vh;
+   
+}
+
+.bk1 {
+  width: 95vw;
+  height:53vh;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  
+  background-color: #fff;
+  margin-top: 2.5vh;
+
+}
+
+
+.canvas {
+   width:88vw;
+  height: 40vh;
+  margin-top: 0rpx;
+}
+
+.biaohong {
+  color: red;
+}
+
+.rowLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rowLayout1 {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px rgb(233, 233, 233) solid;
+  justify-content: space-between;
+}
+
+.rowLayout3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.gg{
+margin-top: 1.1vh;
+
+}
+/**.qs {
+  width: 690rpx;
+  border-radius: 30rpx;
+  background-color: rgb(207, 91, 37);
+  height: 950rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  color: #333;
+  
+}**/
